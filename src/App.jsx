@@ -5,6 +5,7 @@ import Layout from './components/Layout';
 import CurrentWeather from './components/CurrentWeather';
 import Forecast from './components/Forecast';
 import WeatherDetails from './components/WeatherDetails';
+import Footer from './components/Footer';
 import LanguageIcon from '@mui/icons-material/Language';
 
 function App() {
@@ -16,7 +17,7 @@ function App() {
   useEffect(() => {
     const fetchWeather = async () => {
       try {
-        const apiKey = import.meta.env.VITE_WEATHER_API_KEY || 'b360baa3f7780eba0ebec0978d672da3';
+        const apiKey = import.meta.env.VITE_WEATHER_API_KEY;
         const lat = 18.079021;
         const lon = -15.965662;
 
@@ -69,7 +70,8 @@ function App() {
 
   return (
     <Layout>
-      <div className="absolute top-6 right-6 z-50 group">
+      {/* Language Selector - Fixed position for mobile */}
+      <div className="fixed top-4 right-4 md:absolute md:top-6 md:right-6 z-50 group">
         <div className="relative">
           <button className="flex items-center gap-2 bg-white/5 hover:bg-white/10 px-4 py-2 rounded-full backdrop-blur-md border border-glass-border transition-all text-sm font-medium">
             <LanguageIcon fontSize="small" className="text-accent-primary" />
@@ -117,6 +119,8 @@ function App() {
           </>
         )}
       </div>
+
+      <Footer />
     </Layout>
   );
 }
