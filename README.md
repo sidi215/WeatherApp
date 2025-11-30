@@ -89,13 +89,13 @@ A feature-rich weather application built with modern web technologies, offering 
 <div align="center">
 
 #### Desktop View
-![Desktop View](https://via.placeholder.com/800x450/0B0F19/60A5FA?text=Desktop+View)
+![Desktop View](screenshots/desktop-view.png)
 
 #### Mobile View
-<img src="https://via.placeholder.com/375x667/0B0F19/60A5FA?text=Mobile+View" alt="Mobile View" width="300"/>
+<img src="screenshots/mobile-view.png" alt="Mobile View" width="300"/>
 
-#### Language Switching
-![Language Support](https://via.placeholder.com/800x450/0B0F19/FBBF24?text=Multi-Language+Support)
+#### Language Switching (Arabic RTL)
+![Language Support](screenshots/arabic-view.png)
 
 </div>
 
