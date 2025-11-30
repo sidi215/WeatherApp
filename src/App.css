@@ -1,0 +1,20 @@
+body{
+  background-color: #283593 !important;
+}
+
+/* Custum Fonts */ 
+@font-face {
+  font-family: F;
+  src: url("/public/Fonts/static/Inter_18pt-Black.ttf");
+  weight: 500;
+}
+@font-face {
+  font-family: F;
+  src: url("/public/Fonts/static/Inter_18pt-BlackItalic.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: F;
+  src: url("/public/Fonts/static/Inter_18pt-BoldItalic.ttf");
+  font-weight: 600;
+}
